@@ -18,6 +18,9 @@ pipeline {
         }
         stage('Build') {
             steps {
+                echo 'Building...'
+                // Add your build commands here
+                sh 'make build
                 // Build the project
                 script {
                     bat 'dotnet build --configuration Release' // Use 'sh' for Linux
