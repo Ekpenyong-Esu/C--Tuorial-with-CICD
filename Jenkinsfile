@@ -31,7 +31,9 @@ pipeline {
             steps {
                 // Run tests
                 script {
-                    bat 'dotnet test' // Use 'sh' for Linux
+                   echo 'Testing...'
+                // Add your test commands here
+                sh 'make test'
                 }
             }
         }
